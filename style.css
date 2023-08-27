@@ -16,7 +16,40 @@ img{
 }
 .nav-item{
   padding: 0px 10px;
+  position: relative;
 }
+.nav-item:hover .child{
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.child{
+  position: absolute;
+  top: 140%;
+  left: 0;
+  padding-left: 0;
+  background-color: #fff;
+  list-style: none;
+  width: 180px;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  z-index: 1;
+}
+.child li{
+  padding: 5px 10px;
+}
+.child li a{
+  background-color: #1d57cf;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
 .nav-item a::after{
   content: "";
   position: absolute;
