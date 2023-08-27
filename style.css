@@ -146,6 +146,9 @@ img{
 }
 
 /* Service section */
+.service{
+  background: url("./video-img-template/service-patern.png");
+}
 .service-content h6{
   color: #aea3eb;
   margin-bottom: 20px;
